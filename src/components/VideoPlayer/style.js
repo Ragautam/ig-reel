@@ -5,7 +5,8 @@ export default style.div`
     background-color: black;
     height: 100dvh;
     width: 100%;
-    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-snap-align: center;
 
     .video-player {
         height: 100%;
