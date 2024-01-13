@@ -3,7 +3,7 @@ import style from "styled-components";
 export default style.div`
     position: relative;
     width: 600px;
-    height: 100vh;
+    height: 100dvh;
     margin: auto;
     overflow: scroll;
     scroll-snap-type: y mandatory;
