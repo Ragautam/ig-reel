@@ -5,7 +5,8 @@ export default style.div`
     width: 600px;
     height: 100dvh;
     margin: auto;
-    overflow: scroll;
+    overflow: hidden;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
 
     @media only screen and (max-width: 600px) {

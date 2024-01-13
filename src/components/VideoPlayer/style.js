@@ -3,7 +3,7 @@ import style from "styled-components";
 export default style.div`
     position: relative;
     background-color: black;
-    height: 100%;
+    height: 100dvh;
     width: 100%;
     scroll-snap-align: start;
 
@@ -31,6 +31,27 @@ export default style.div`
             display: flex;
             align-items: center;
             margin-bottom: 12px;
+        }
+    }
+
+    .volume-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: invert(1);
+        animation: scale 2s infinite linear;
+    }
+
+    @keyframes scale {
+        0% {
+            transform: scale(150%);
+        }
+        50% {
+            transform: scale(200%);
+        }
+        100% {
+            transform: scale(150%);
         }
     }
 

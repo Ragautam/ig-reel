@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import Footer from "./Footer";
 import ErrorPage from "../ErrorPage";
+import volumeIcon from "../../icons/volume.svg";
 import StyleWrapper from "./style";
 
 function VideoPlayer({
@@ -41,6 +42,11 @@ function VideoPlayer({
   return (
     <StyleWrapper>
       {!!error && <ErrorPage error={error} />}
+      {isVideoMuted && (
+        <div className="volume-icon">
+          <img src={volumeIcon} alt="volume icon" />
+        </div>
+      )}
       <video
         ref={videoRef}
         className="video-player"
